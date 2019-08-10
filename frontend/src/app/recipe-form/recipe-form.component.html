@@ -18,7 +18,8 @@
     <mat-form-field>
       <input matInput placeholder="Difficulty (1-5)" type="number" min="0" max="5" formControlName="difficulty">
     </mat-form-field>
-    <button mat-raised-button color="primary" [disabled]="recipeForm.invalid" (click)="onSubmit()">Submit</button>
+    <button mat-raised-button color="primary" type="button" [disabled]="recipeForm.invalid"
+      (click)="onSubmit()">Submit</button>
     <p>{{ errorMessage }}</p>
   </form>
 </mat-card>
